@@ -40,8 +40,8 @@ class Cliente:
         }
         return data
 if __name__ == "__main__":
-    HOST = "localhost"
-    PORT = 5000
+    HOST = input("Ingresa la dirección IP del servidor: ")
+    PORT = int(input("Ingresa el puerto del servidor: "))
     cliente = Cliente(HOST, PORT)
     cliente.enviar_json()
     # cliente.cerrar()
